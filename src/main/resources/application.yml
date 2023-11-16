@@ -1,3 +1,5 @@
+server:
+  port: 8099
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
@@ -8,3 +10,17 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+springdoc:
+  swagger-ui:
+    path: /docs
+    operationsSorter: alpha
+
+app:
+  name: "Gestion des produits"
+  version: 1.0
+  description: Application de Gestion des produits - Formation JobIntech
+
+
+cors:
+  allowed:
+    origins: http://localhost:4200

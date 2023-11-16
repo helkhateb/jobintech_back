@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IProductService {
     public List<ProductDto> findAll();
+    public ProductDto save(ProductDto dto);
 }
